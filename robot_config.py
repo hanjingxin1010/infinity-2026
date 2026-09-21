@@ -77,8 +77,8 @@ TURN_SPEED = 700
 TURN_ACCELERATION = 700
 
 # Set up the drive base.
-DRIVE_LEFT = Motor(Port.D, Direction.COUNTERCLOCKWISE)
-DRIVE_RIGHT = Motor(Port.B, Direction.CLOCKWISE)
+DRIVE_LEFT = Motor(Port.D, Direction.CLOCKWISE)
+DRIVE_RIGHT = Motor(Port.B, Direction.COUNTERCLOCKWISE)
 DRIVE_BASE = DriveBase(DRIVE_LEFT, DRIVE_RIGHT, 56, 114)
 
 # set up the attachments, if needed
