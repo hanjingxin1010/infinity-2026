@@ -14,22 +14,12 @@ async def main():
 	print("Driving forward 100 mm")
 	await DRIVE_BASE.straight(630)
 	print("Drone off map (20) and Turning left 48 degrees")
-	await DRIVE_BASE.turn(-52)
-	print("Turning opposite 56 degrees")
-	await set_drivebase()
-	DRIVE_BASE.settings(
-		straight_speed=200,
-		straight_acceleration=300,
-		turn_rate=300,
-		turn_acceleration=300,
-	)
-	await DRIVE_BASE.turn(65)
-	print("Flipped over (10) and Returning quickly")
-	DRIVE_BASE.use_gyro(False)
+	await DRIVE_BASE.turn(-50)
+	await DRIVE_BASE.turn(55)
 	await set_drivebase()
 	DRIVE_BASE.settings(
 		straight_speed=800,
-		straight_acceleration=400,
+		straight_acceleration=1000,
 		turn_rate=200,
 		turn_acceleration=300,
 	)
