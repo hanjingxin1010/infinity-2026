@@ -27,8 +27,8 @@ PROFILES = {
         "axle_track": 114,     # mm
         "drive_left": {"port": Port.C, "direction": Direction.COUNTERCLOCKWISE},
         "drive_right": {"port": Port.D, "direction": Direction.CLOCKWISE},
-        "left_attachment": {"port": Port.A, "direction": Direction.COUNTERCLOCKWISE},
-        "right_attachment": {"port": Port.B, "direction": Direction.COUNTERCLOCKWISE},
+        "left_attachment": {"port": Port.B, "direction": Direction.COUNTERCLOCKWISE},
+        "right_attachment": {"port": Port.A, "direction": Direction.COUNTERCLOCKWISE},
         "left_color_sensor": Port.E,
         "right_color_sensor": Port.F,
     },
