@@ -45,6 +45,20 @@ PROFILES = {
         "left_color_sensor": Port.F,
         "right_color_sensor": Port.C,
         },
+
+
+    "Max": {
+        "hub_top_side": Axis.Z,
+        "hub_front_side": - Axis.Y,
+        "wheel_diameter": 56,  # mm
+        "axle_track": 114,     # mm
+        "drive_left": {"port": Port.A, "direction": Direction.COUNTERCLOCKWISE},
+        "drive_right": {"port": Port.E, "direction": Direction.CLOCKWISE},
+        "left_attachment": {"port": Port.D, "direction": Direction.COUNTERCLOCKWISE},
+        "right_attachment": {"port": Port.F, "direction": Direction.COUNTERCLOCKWISE},
+        "left_color_sensor": Port.B,
+        "right_color_sensor": Port.C,
+        },
 }
 
 # Used when the connected hub's name isn't listed above.
