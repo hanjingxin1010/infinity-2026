@@ -11,8 +11,11 @@ async def main():
 		turn_rate=100,
 		turn_acceleration=400,
 	)
-	
-	LEFT_ATTACHMENT.run_angle(100, 90)
+	#print("Driving forward 100 mm")
+	await DRIVE_BASE.straight(50)
+	await LEFT_ATTACHMENT.run_angle(200, 360)
+	await RIGHT_ATTACHMENT.run_angle(200, 360)
+	print("done.")
 
 if __name__ == "__main__":
 	run_task(main()) 
