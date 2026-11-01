@@ -4,6 +4,9 @@ from pybricks.tools import multitask, run_task, wait
 from library import set_drivebase, print_drivebase_settings
 from ui import add_program, user_interface
 
+from M1_DroneSurvey import M1
+from M1_M2 import M2
+from M3_FlipTheRock import M3
 #from run1 import run1
 #from run2 import run2
 #from run3 import run3
@@ -32,12 +35,12 @@ async def main():
     # Add the programs (Missons) below they will appear in the order placed
     # Missions will need to be imported, see example missions/utility programs
     # below
-    await add_program(run1, '1', Color.GREEN)
-    await add_program(run2, '2', Color.VIOLET)
-    await add_program(run3, '3', Color.YELLOW)
-    await add_program(run5, '4', Color.ORANGE)
-    await add_program(run4, '5', Color.BLUE)
-    await add_program(run6, '6', Color.RED)
+    await add_program(M1, '1', Color.GREEN)
+    await add_program(M2, '2', Color.VIOLET)
+    await add_program(M3, '3', Color.YELLOW)
+    #await add_program(run5, '4', Color.ORANGE)
+    #await add_program(run4, '5', Color.BLUE)
+    #await add_program(run6, '6', Color.RED)
 
     # Launch the user interface
     await user_interface()
