@@ -19,7 +19,7 @@ async def M1_M2():
 		DRIVE_BASE.straight(685),
 	)
 
-	await DRIVE_BASE.straight(-10)
+	await DRIVE_BASE.straight(-12)
 	"""
 	print("Turning -20 degrees")
 	await DRIVE_BASE.turn(-20) 
@@ -37,7 +37,7 @@ async def M1_M2():
 	await wait(1000)
 	await DRIVE_BASE.straight(12)
 	await wait(1000)
-	await DRIVE_BASE.turn(-28)
+	await DRIVE_BASE.turn(-30)
 		
 	print("Turning 55 degrees")
 	await wait(1000)
@@ -51,21 +51,21 @@ async def M1_M2():
 		turn_acceleration=300,
 	)
 	print("Driving backward 514 mm toward the next task")
-	await DRIVE_BASE.straight(-532)
+	await DRIVE_BASE.straight(-555)
 	 
 	#await DRIVE_BASE.turn(-50.5)
 	await DRIVE_BASE.turn(-49.5)
 	await LEFT_ATTACHMENT.run_angle(-180, 120)
 	DRIVE_BASE.settings(
-		straight_speed=300,
+		straight_speed=500,
 		straight_acceleration=600,
 		turn_rate=200,
 		turn_acceleration=200,
 	)
-	await DRIVE_BASE.straight(210)
+	await DRIVE_BASE.straight(230)
 	await multitask(
 		LEFT_ATTACHMENT.run_angle(90, 16),
-		DRIVE_BASE.straight(80),
+		DRIVE_BASE.straight(93),
 	)
 	await wait(500)
 	DRIVE_BASE.settings(
