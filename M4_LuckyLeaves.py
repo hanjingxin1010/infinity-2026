@@ -6,7 +6,7 @@ from library import set_drivebase
 from robot_config import DRIVE_BASE
 
 
-async def main():
+async def M4():
     DRIVE_BASE.use_gyro(True)
     await set_drivebase()
     DRIVE_BASE.settings(
@@ -27,4 +27,4 @@ async def main():
     await RIGHT_ATTACHMENT.run_angle(360, -60)
     await DRIVE_BASE.curve(-350, -160)
 if __name__ == "__main__":
-    run_task(main())
+    run_task(M4())

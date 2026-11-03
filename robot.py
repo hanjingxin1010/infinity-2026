@@ -1,6 +1,8 @@
 from pybricks.parameters import Color
 from pybricks.tools import multitask, run_task, wait
 
+import M3_M4
+from M4_LuckyLeaves import M4
 from library import set_drivebase, print_drivebase_settings
 from ui import add_program, user_interface
 
@@ -38,7 +40,8 @@ async def main():
     await add_program(M1, '1', Color.GREEN)
     await add_program(M1_M2, '2', Color.VIOLET)
     await add_program(M3, '3', Color.YELLOW)
-    #await add_program(run5, '4', Color.ORANGE)
+    await add_program(M4, '4', Color.YELLOW)
+    await add_program(M3_M4, '4', Color.ORANGE)
     #await add_program(run4, '5', Color.BLUE)
     #await add_program(run6, '6', Color.RED)
 
