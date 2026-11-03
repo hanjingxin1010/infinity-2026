@@ -48,8 +48,8 @@ async def M3():
     print("Starting attachment +160")
     await RIGHT_ATTACHMENT.run_angle(180, 90)
     print("Attachment +160 done")
-    await DRIVE_BASE.straight(280)
-    print("Drive 310 done")
+    await DRIVE_BASE.straight(260)
+    print("Drive 260 done")
     await RIGHT_ATTACHMENT.run_angle(180, -100)
     print("Attachment -100 done")
 
@@ -64,6 +64,6 @@ async def M3():
     )
     #await DRIVE_BASE.straight(440)
     #await DRIVE_BASE.turn(-90)
-    #await DRIVE_BASE.straight(-400)
+    await DRIVE_BASE.curve(-350, -160)
 if __name__ == "__main__":
     run_task(M3())

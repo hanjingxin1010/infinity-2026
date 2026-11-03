@@ -3,7 +3,7 @@
 from pybricks.tools import multitask, run_task, wait
 
 from library import set_drivebase
-from robot_config import DRIVE_BASE, DRIVE_LEFT, DRIVE_RIGHT, RIGHT_ATTACHMENT
+from robot_config import DRIVE_BASE, DRIVE_LEFT, DRIVE_RIGHT, LEFT_ATTACHMENT, RIGHT_ATTACHMENT
 
 
 #WHEEL_DIAMETER = 56
@@ -20,10 +20,10 @@ async def test_run():
 		turn_rate=600,
 		turn_acceleration=600,
 	)
-	await multitask(
-		RIGHT_ATTACHMENT.run_angle(100000000, -127),
-		DRIVE_BASE.straight(20),
-	)
+
+	await LEFT_ATTACHMENT.run_angle(100, -360)
+	
+	
 
 	#print("Driving forward one wheel rotation")
 	#await DRIVE_BASE.straight(ONE_WHEEL_ROTATION)
