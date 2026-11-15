@@ -1,20 +1,20 @@
 from pybricks.parameters import Color
 from pybricks.tools import multitask, run_task, wait
 
+import Roger.M3_M4 as M3_M4
+from Roger.M4_LuckyLeaves import M4
 from library import set_drivebase, print_drivebase_settings
 from ui import add_program, user_interface
 
-<<<<<<< HEAD
-from run2 import run2
-from run3 import run3
-from run4 import run4
-from run5 import run5
-from run6 import run6
-=======
-# 2025 Unearthed runs are archived in code_2025_unearthed/ (they use the old
-# CENTER/FRONT attachments). Import new-season runs here, e.g.:
-# from run1 import run1
->>>>>>> caef4b59ab7eaee27f47be849441be7b7ca81088
+from Roger.M1_DroneSurvey import M1
+from Roger.M1_M2 import M1_M2
+from Roger.M3_FlipTheRock import M3
+#from run1 import run1
+#from run2 import run2
+#from run3 import run3
+#from run4 import run4
+#from run5 import run5
+#from run6 import run6
 
 async def main():
     # Import from xbox_teleop the teleop function if you want to use
@@ -37,15 +37,13 @@ async def main():
     # Add the programs (Missons) below they will appear in the order placed
     # Missions will need to be imported, see example missions/utility programs
     # below
-<<<<<<< HEAD
-    await add_program(run2, '2', Color.VIOLET)
-    await add_program(run3, '3', Color.YELLOW)
-    await add_program(run5, '4', Color.ORANGE)
-    await add_program(run4, '5', Color.BLUE)
-    await add_program(run6, '6', Color.RED)
-=======
-    # await add_program(run1, '1', Color.GREEN)
->>>>>>> caef4b59ab7eaee27f47be849441be7b7ca81088
+    await add_program(M1, '1', Color.GREEN)
+    await add_program(M1_M2, '2', Color.VIOLET)
+    await add_program(M3, '3', Color.YELLOW)
+    await add_program(M4, '4', Color.YELLOW)
+    await add_program(M3_M4, '4', Color.ORANGE)
+    #await add_program(run4, '5', Color.BLUE)
+    #await add_program(run6, '6', Color.RED)
 
     # Launch the user interface
     await user_interface()

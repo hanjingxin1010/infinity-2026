@@ -27,8 +27,8 @@ PROFILES = {
         "axle_track": 114,     # mm
         "drive_left": {"port": Port.C, "direction": Direction.COUNTERCLOCKWISE},
         "drive_right": {"port": Port.D, "direction": Direction.CLOCKWISE},
-        "left_attachment": {"port": Port.A, "direction": Direction.COUNTERCLOCKWISE},
-        "right_attachment": {"port": Port.B, "direction": Direction.COUNTERCLOCKWISE},
+        "left_attachment": {"port": Port.B, "direction": Direction.COUNTERCLOCKWISE},
+        "right_attachment": {"port": Port.A, "direction": Direction.COUNTERCLOCKWISE},
         "left_color_sensor": Port.E,
         "right_color_sensor": Port.F,
     },
@@ -60,8 +60,7 @@ PROFILES = {
         "right_color_sensor": Port.C,
         },
     
-    "ReeeHub"
-: {
+    "ReeeHub": {
         "hub_top_side": Axis.Z,
         "hub_front_side": - Axis.Y,
         "wheel_diameter": 56,  # mm
@@ -73,9 +72,7 @@ PROFILES = {
         "left_color_sensor": Port.F,
         "right_color_sensor": Port.C,
     },
-
-    "Howard"
-: {
+    "Howard": {
         "hub_top_side": Axis.Z,
         "hub_front_side": - Axis.Y,
         "wheel_diameter": 56,  # mm
@@ -88,7 +85,6 @@ PROFILES = {
         "right_color_sensor": Port.C,
     },
 }
-
 
 # Used when the connected hub's name isn't listed above.
 DEFAULT_PROFILE = "infinite-1"
