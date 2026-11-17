@@ -1,14 +1,21 @@
 from pybricks.parameters import Color
 from pybricks.tools import multitask, run_task, wait
 
-import Roger.M3_M4 as M3_M4
-from Roger.M4_LuckyLeaves import M4
+from M12_ForestElder import M12
+from M13_KeystoneSpecies import M13
+from M14_SeedsOfRenewal import M14
+from M15_BiocentricArchitecture import M15
+import M3_M4 as M3_M4
+from M4_LuckyLeaves import M4
+from M5_ReachingRoots import M5
+from M6_M11_LeafcutterFrenzy import M6
+from M7_Mycelium import M7
 from library import set_drivebase, print_drivebase_settings
 from ui import add_program, user_interface
 
-from Roger.M1_DroneSurvey import M1
-from Roger.M1_M2 import M1_M2
-from Roger.M3_FlipTheRock import M3
+from M1_DroneSurvey import M1
+from M1_M2 import M1_M2
+from M3_FlipTheRock import M3
 #from run1 import run1
 #from run2 import run2
 #from run3 import run3
@@ -37,11 +44,18 @@ async def main():
     # Add the programs (Missons) below they will appear in the order placed
     # Missions will need to be imported, see example missions/utility programs
     # below
-    await add_program(M1, '1', Color.GREEN)
-    await add_program(M1_M2, '2', Color.VIOLET)
-    await add_program(M3, '3', Color.YELLOW)
-    await add_program(M4, '4', Color.YELLOW)
-    await add_program(M3_M4, '4', Color.ORANGE)
+    #await add_program(M1, '1', Color.GREEN)
+    await add_program(M1_M2, '1', Color.VIOLET)
+    await add_program(M3, '2', Color.YELLOW)
+    #await add_program(M4, '4', Color.YELLOW)
+    #await add_program(M3_M4, '5', Color.ORANGE)
+    await add_program(M5, '3', Color.RED)
+    await add_program(M6, '4', Color.RED)
+    await add_program(M7, '5', Color.RED)
+    await add_program(M12, '6', Color.RED)
+    await add_program(M13, '7', Color.RED)
+    await add_program(M14, '8', Color.RED)
+    await add_program(M15, '9', Color.RED)
     #await add_program(run4, '5', Color.BLUE)
     #await add_program(run6, '6', Color.RED)
 

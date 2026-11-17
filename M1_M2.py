@@ -15,7 +15,7 @@ async def M1_M2():
 	print("Driving forward 680 mm while moving the attachment")
 	await multitask(
 		LEFT_ATTACHMENT.run_angle(180, 127),
-		DRIVE_BASE.straight(660),
+		DRIVE_BASE.straight(657),
 	)
 	
 	print("Turning 20 degrees")
