@@ -69,6 +69,9 @@ async def M1_M2():
 	await DRIVE_BASE.curve(-400, -60)
 	#await DRIVE_BASE.straight(100)
 	print("Return complete")
+	await multitask(
+		LEFT_ATTACHMENT.run_target(360, 40)
+	)
 	
 	
 

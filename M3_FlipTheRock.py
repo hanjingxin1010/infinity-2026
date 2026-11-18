@@ -9,16 +9,15 @@ async def M3():
     await set_drivebase()
     DRIVE_BASE.settings(
         straight_speed=500,
-        straight_acceleration=500,
+        straight_acceleration=300,
         turn_rate=100,
         turn_acceleration=400,
     )
 
     # Step 2: Move into position and prepare the attachment to flip the rock.
     print("Step 2: Moving into position to flip the rock")
-    await RIGHT_ATTACHMENT.run_angle(180, -100)
-    await DRIVE_BASE.straight(500)
-    await DRIVE_BASE.straight(-500)
+    await DRIVE_BASE.straight(300)
+    await DRIVE_BASE.straight(-300)
 
 if __name__ == "__main__":
     run_task(M3())

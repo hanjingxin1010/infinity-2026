@@ -10,6 +10,7 @@ from M4_LuckyLeaves import M4
 from M5_ReachingRoots import M5
 from M6_M11_LeafcutterFrenzy import M6
 from M7_Mycelium import M7
+from RobotMotorReset import ArmReset
 from library import set_drivebase, print_drivebase_settings
 from ui import add_program, user_interface
 
@@ -56,6 +57,7 @@ async def main():
     await add_program(M13, 'B', Color.RED)
     await add_program(M14, 'C', Color.RED)
     await add_program(M15, 'D', Color.RED)
+    await add_program(ArmReset, 'R', Color.RED)
     #await add_program(run4, '5', Color.BLUE)
     #await add_program(run6, '6', Color.RED)
 
