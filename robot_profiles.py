@@ -50,7 +50,7 @@ PROFILES = {
         "hub_top_side": Axis.Z,
         "hub_front_side": - Axis.Y,
         "wheel_diameter": 56,  # mm
-        "axle_track": 114,     # mm
+        "axle_track": 112,     # mm
         "drive_left": {"port": Port.D, "direction": Direction.CLOCKWISE},
         "drive_right": {"port": Port.B, "direction": Direction.COUNTERCLOCKWISE},
         "left_attachment": {"port": Port.E, "direction": Direction.COUNTERCLOCKWISE},
