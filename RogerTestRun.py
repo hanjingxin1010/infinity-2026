@@ -24,7 +24,9 @@ async def test_run():
 	#RIGHT_ATTACHMENT.dc(100)
 	#await RIGHT_ATTACHMENT.run_angle(300, 300)
 	#await DRIVE_BASE.turn(45)
-	await DRIVE_BASE.straight(200)
+	await LEFT_ATTACHMENT.run_target(360, 40)
+	await RIGHT_ATTACHMENT.run_target(360, 40)
+
 	#await DRIVE_BASE.curve(-200, 70)
 	#await DRIVE_BASE.straight(800)
 	"""

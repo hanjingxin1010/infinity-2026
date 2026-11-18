@@ -6,7 +6,7 @@ from robot_config import DRIVE_BASE
 
 
 async def M5():
-    DRIVE_BASE.use_gyro(True)
+    
     await set_drivebase()
     DRIVE_BASE.settings(
         straight_speed=950,
@@ -14,14 +14,23 @@ async def M5():
         turn_rate=500,
         turn_acceleration=400,
     )
-    
-    await DRIVE_BASE.straight(790)
-    await RIGHT_ATTACHMENT.run_angle(1000, 110)
-    await wait(500)
-    await DRIVE_BASE.straight(100)
-    await wait(500)
+    DRIVE_BASE.use_gyro(True)
+    await multitask(
+        RIGHT_ATTACHMENT.run_angle(1000, -110),
+        DRIVE_BASE.straight(780),
+    )
+
+    RIGHT_ATTACHMENT.control.limits(
+        speed=1100,
+        acceleration=20000,
+        torque=1000,
+    )
+    await RIGHT_ATTACHMENT.run_angle(1000, 180)
+    #await wait(500)
+    #await DRIVE_BASE.straight(100)
+    #await wait(500)
     #await RIGHT_ATTACHMENT.run_angle(1000, -50)
-    await DRIVE_BASE.straight(-100)
     #await DRIVE_BASE.straight(-100)
+    await DRIVE_BASE.straight(-800)
 if __name__ == "__main__":
     run_task(M5())
