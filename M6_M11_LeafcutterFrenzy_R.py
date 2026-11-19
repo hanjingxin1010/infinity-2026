@@ -38,7 +38,7 @@ async def M6_M11():
         turn_acceleration=200,
     )
     await DRIVE_BASE.straight(-35)  # step 10 back up from handle
-    await DRIVE_BASE.turn(87)  # step 11 turn away from leaves
+    await DRIVE_BASE.turn(90)  # step 11 turn away from leaves
     await DRIVE_BASE.straight(800)  # step 12 go home
 
 if __name__ == "__main__":

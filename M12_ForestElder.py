@@ -62,7 +62,7 @@ async def M12():
 	
 	await DRIVE_BASE.turn(85)
 	#await DRIVE_BASE.curve(-200,70)
-	await DRIVE_BASE.straight(120)
+	await DRIVE_BASE.straight(140)
 	await RIGHT_ATTACHMENT.run_angle(50, -60)
 	await multitask(
 		RIGHT_ATTACHMENT.run_angle(50, 60),

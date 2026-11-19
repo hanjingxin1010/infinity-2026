@@ -8,7 +8,6 @@ from M15_BiocentricArchitecture import M15
 import M3_M4 as M3_M4
 from M4_LuckyLeaves import M4
 from M5_ReachingRoots import M5
-from M6_M11_LeafcutterFrenzy import M6
 from M6_M11_LeafcutterFrenzy_R import M6_M11
 from M7_Mycelium import M7
 from RobotMotorReset import ArmReset
