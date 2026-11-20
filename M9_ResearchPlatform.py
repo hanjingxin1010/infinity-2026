@@ -23,13 +23,25 @@ async def M9():
     #DRIVE_BASE.distance_control.limits(speed=500, acceleration=800, torque=1000)
 
     await DRIVE_BASE.straight(600)
-    await DRIVE_BASE.straight(-20)
-    await DRIVE_BASE.straight(20)
-    await DRIVE_BASE.straight(-20)
-    await DRIVE_BASE.straight(20)
+    await DRIVE_BASE.straight(-30)
+    await DRIVE_BASE.straight(30)
+    await set_drivebase()
+    DRIVE_BASE.settings(
+        straight_speed=100,
+        straight_acceleration=100,
+        turn_rate=500,
+        turn_acceleration=400,
+    )
         
     await DRIVE_BASE.straight(-150)
     await DRIVE_BASE.turn(40)
+    await set_drivebase()
+    DRIVE_BASE.settings(
+    straight_speed=800,
+    straight_acceleration=800,
+    turn_rate=500,
+    turn_acceleration=400,
+)
     await DRIVE_BASE.straight(-800)
     #await DRIVE_BASE.arc(-1000,-70)
     #await RIGHT_ATTACHMENT.r5n_angle(1000, -180)
