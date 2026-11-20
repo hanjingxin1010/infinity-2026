@@ -11,6 +11,7 @@ from M5_ReachingRoots import M5
 from M6_M11_LeafcutterFrenzy_R import M6_M11
 from M7_Mycelium import M7
 from RobotMotorReset import ArmReset
+from BatteryTest import BatteryTest
 from library import set_drivebase, print_drivebase_settings
 from ui import add_program, user_interface
 
@@ -46,11 +47,9 @@ async def main():
     # Missions will need to be imported, see example missions/utility programs
     # below
     #await add_program(M1, '1', Color.GREEN)
-    await add_program(M1_M2, '1', Color.VIOLET)
-    await add_program(M3, '3', Color.YELLOW)
-    #await add_program(M4, '4', Color.YELLOW)
-    #await add_program(M3_M4, '5', Color.ORANGE)
-    await add_program(M5, '5', Color.RED)
+    await add_program(M1_M2, '1', Color.VIOLET) 
+    await add_program(M3, '2', Color.YELLOW)
+    await add_program(M5, '3', Color.RED)
     await add_program(M6_M11, '6', Color.RED) #Move From Left home to Right Home
     await add_program(M7, 'A', Color.RED) #mycelium
     await add_program(M13, 'B', Color.RED) #keystone species
@@ -58,6 +57,7 @@ async def main():
     await add_program(M15, 'D', Color.RED) #biocentric architecture
     await add_program(M14, 'E', Color.RED) #seeds of renewal
     await add_program(ArmReset, 'R', Color.RED)
+    await add_program(BatteryTest, 'T', Color.RED)
     #await add_program(run4, '5', Color.BLUE)
     #await add_program(run6, '6', Color.RED)
 

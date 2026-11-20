@@ -28,8 +28,8 @@ async def M12():
 	#await DRIVE_BASE.turn(45)
 	
 	await DRIVE_BASE.straight(270)
-	await LEFT_ATTACHMENT.run_angle(100, 40)
-	await DRIVE_BASE.straight(-160)
+	await LEFT_ATTACHMENT.run_angle(50, 40)
+	await DRIVE_BASE.straight(-180)
 	await set_drivebase()
 	DRIVE_BASE.settings(
 		straight_speed=300,
@@ -42,31 +42,31 @@ async def M12():
 	#await DRIVE_BASE.straight(-60)
 	#await DRIVE_BASE.turn(-10)
 	await multitask(
-			LEFT_ATTACHMENT.run_angle(50, -60),
-			DRIVE_BASE.straight(-60),
+			LEFT_ATTACHMENT.run_angle(50, -70),
+			DRIVE_BASE.straight(-65),
 		)
 	#await LEFT_ATTACHMENT.run_angle(50, 100)
 	await set_drivebase()
 	DRIVE_BASE.settings(
-		straight_speed=800,
-		straight_acceleration=800,
+		straight_speed=500,
+		straight_acceleration=400,
 		turn_rate=500,
 		turn_acceleration=500,
 	)
 	await DRIVE_BASE.turn(-40)
 	await multitask(
-		LEFT_ATTACHMENT.run_angle(50, 110),
+		LEFT_ATTACHMENT.run_angle(200, 110),
 		DRIVE_BASE.straight(710),
 	)
 	#await DRIVE_BASE.turn(-40)
 	
 	await DRIVE_BASE.turn(85)
 	#await DRIVE_BASE.curve(-200,70)
-	await DRIVE_BASE.straight(140)
+	await DRIVE_BASE.straight(120)
 	await RIGHT_ATTACHMENT.run_angle(50, -60)
 	await multitask(
 		RIGHT_ATTACHMENT.run_angle(50, 60),
-		DRIVE_BASE.straight(-100),
+		DRIVE_BASE.straight(-120),
 	)
 	await DRIVE_BASE.turn(18)
 	await RIGHT_ATTACHMENT.run_angle(50, -60)
