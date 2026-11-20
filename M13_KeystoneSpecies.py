@@ -20,7 +20,12 @@ async def M13():
     await DRIVE_BASE.straight(250)
     await DRIVE_BASE.straight(-250)
     await DRIVE_BASE.turn(-60)
+
+    await multitask(
+        LEFT_ATTACHMENT.run_target(360, 50),
+        RIGHT_ATTACHMENT.run_target(360, 40),
+        DRIVE_BASE.straight(-800),
+    )
     
-    await DRIVE_BASE.straight(-800)
 if __name__ == "__main__":
     run_task(M13())
