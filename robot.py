@@ -54,8 +54,8 @@ async def main():
     await add_program(M5, '3', Color.RED)
     await add_program(M9, '4', Color.RED)
     await add_program(M6_M11, '6', Color.RED) #Move From Left home to Right Home
-    await add_program(M7_M13, 'A', Color.RED) #mycelium
-    #await add_program(M13, 'B', Color.RED) #keystone species
+    await add_program(M7, 'A', Color.RED) #mycelium
+    await add_program(M13, 'B', Color.RED) #keystone species
     await add_program(M12, 'C', Color.RED) #forest elder
     await add_program(M15, 'D', Color.RED) #biocentric architecture
     await add_program(M14, 'E', Color.RED) #seeds of renewal
