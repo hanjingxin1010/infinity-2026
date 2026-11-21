@@ -16,7 +16,7 @@ async def M14():
         turn_acceleration=400,
     )
 
-    await DRIVE_BASE.straight(130)
-    await DRIVE_BASE.straight(-130) 
+    await DRIVE_BASE.straight(300)
+    await DRIVE_BASE.straight(-300) 
 if __name__ == "__main__":
     run_task(M14())
