@@ -56,11 +56,12 @@ async def main():
     await add_program(M6_M11, '6', Color.RED) #Move From Left home to Right Home
     await add_program(M7, 'A', Color.RED) #mycelium
     await add_program(M13, 'B', Color.RED) #keystone species
-    await add_program(M12, 'C', Color.RED) #forest elder
-    await add_program(M15, 'D', Color.RED) #biocentric architecture
-    await add_program(M14, 'E', Color.RED) #seeds of renewal
+    await add_program(M15, 'C', Color.RED) #biocentric architecture
+    await add_program(M14, 'D', Color.RED) #seeds of renewal
+    await add_program(M12, 'E', Color.RED) #forest elder
     await add_program(ArmReset, 'R', Color.RED)
     await add_program(BatteryTest, 'T', Color.RED)
+    
     #await add_program(run4, '5', Color.BLUE)
     #await add_program(run6, '6', Color.RED)
 
