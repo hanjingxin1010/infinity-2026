@@ -53,7 +53,7 @@ async def main():
     await add_program(M3, '2', Color.YELLOW)
     await add_program(M5, '3', Color.RED)
     await add_program(M9, '4', Color.RED)
-    await add_program(M6_M11, '6', Color.RED) #Move From Left home to Right Home
+    await add_program(M6_M11, '5', Color.RED) #Move From Left home to Right Home
     await add_program(M7, 'A', Color.RED) #mycelium
     await add_program(M13, 'B', Color.RED) #keystone species
     await add_program(M15, 'C', Color.RED) #biocentric architecture
