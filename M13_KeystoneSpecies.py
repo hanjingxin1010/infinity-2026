@@ -19,9 +19,9 @@ async def M13():
     await DRIVE_BASE.straight(720)
     await DRIVE_BASE.turn(43)
     await DRIVE_BASE.straight(120)
-    await DRIVE_BASE.straight(-100)
+    await DRIVE_BASE.straight(-120)
     await DRIVE_LEFT.run_angle(100,60)
-    await DRIVE_BASE.straight(25)
+    #await DRIVE_BASE.straight(25)
     
     await RIGHT_ATTACHMENT.run_angle(100,-60)
     await wait(500)
@@ -29,7 +29,7 @@ async def M13():
 
     await DRIVE_BASE.straight(-110)
     
-    await DRIVE_BASE.turn(15)
+    await DRIVE_BASE.turn(7)
     await set_drivebase()
     DRIVE_BASE.settings(
         straight_speed=500,
